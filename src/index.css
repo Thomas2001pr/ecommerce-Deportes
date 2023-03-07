@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.titulo-p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(236, 245, 245);
+    padding-top: 15px;
+    padding-left: 35px;
+    font-size: 35px;
+    text-decoration: none;
+    
+}
+
+
+
+
+header{
+    background-color: black;
+    position: relative;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined{
+    color: white;
+    text-align: right;
+    position: fixed;
+    right: 80px;
+    top: 25px;
+}
+
+
+span{
+    color: white;
+    text-align: right;
+    position: fixed;
+    right: 70px;
+    top: 30px;
+}
+
+
+.ul-nav{
+    position: absolute;
+    top: 30px;
+    right: 550px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+}
+
+.ul-nav button{
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.greeting{
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+
+/*------------------------*/
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+
+.detail{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.nombre-p{
+    color: white;
+}
+
+.precio-p{
+    color: white;
+}
+
+.img-p{
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor-p{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 35px 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------HOME------------*/
+
+
+
+
+
+.img-messi{
+    width: 50em;
+    height: 34em;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.btn-dm{
+    position: absolute;
+    top: 40%;
+    left: 620px;
+    background: black;
+    color: white;
+    padding: 16px 12px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+
+.btn-dm:hover{
+    background: white;
+    border: 1px solid rgb(202, 178, 43);
+    color: rgb(103, 173, 185);
+    transition: .5s;
+    
+}
+
+.cart{
+    color: white;
+}
+
+
+/*----------DETALLES--------------*/
+
+
+
+
+
+.detalle-n{
+    color: white;
+}
+
+.detalle-p{
+    color: white;
+}
+
+.detalle-prf{
+    color: white;
+}
+
+
+
+
