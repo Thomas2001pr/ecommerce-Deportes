@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { userCartContext } from '../context/ShoppingCartContext'
 
 const CartWidget = () => {
+
+const {totalProducts} = userCartContext();
+
+
+
   return (
     <>
       <div>
@@ -9,7 +15,7 @@ const CartWidget = () => {
         <span className="material-symbols-outlined">
           shopping_cart
         </span>
-        <span>5</span>
+        <span>{totalProducts() || ''}</span>
         </Link>
       </div>
     </>

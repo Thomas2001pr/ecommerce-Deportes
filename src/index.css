@@ -4,18 +4,22 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 .titulo-p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(236, 245, 245);
     padding-top: 15px;
     padding-left: 35px;
     font-size: 35px;
+}
+a:-webkit-any-link{
     text-decoration: none;
-    
 }
 
 
@@ -27,6 +31,7 @@ header{
     height: 70px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 203, 156);
 }
 
 .material-symbols-outlined{
@@ -47,26 +52,44 @@ span{
 }
 
 
+
+.contenedor-nav{
+    margin-right: 200px;
+}
+
+
 .ul-nav{
-    position: absolute;
     top: 30px;
     right: 550px;
     text-decoration: none;
     margin-left: 10px;
     color: white;
-    display: flex;
+    display: inline-block;
+    margin-top: 30px;
 }
+
+
+
+
+
 
 .ul-nav button{
     background: black;
     color: white;
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    border: none;
+    
 }
 
 
-
+.ul-nav button:hover{
+    color: rgb(224, 203, 156);
+    transition: .5s;
+}
 
 
 
@@ -111,6 +134,8 @@ span{
     margin-top: 50px;
     padding: 35px 35px;
     cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 
@@ -134,7 +159,7 @@ span{
 
 .img-messi{
     width: 50em;
-    height: 34em;
+    height: 36em;
     display: block;
     margin: auto;
     position: relative;
@@ -171,7 +196,9 @@ span{
 /*----------DETALLES--------------*/
 
 
-
+.content{
+    color: white;
+}
 
 
 .detalle-n{
@@ -187,5 +214,15 @@ span{
 }
 
 
+/*---------------ItemCart------------------*/
 
+.itemCart{
+    display: flex;
+    display: inline-block;
+    color: white;
+}
+.totalPrice{
+    color: white;
+    font-size: 20px;
+}
 
