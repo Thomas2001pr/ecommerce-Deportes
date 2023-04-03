@@ -27,15 +27,18 @@ const ItemDetail = ({data}) => {
     <div className="container">
       <div className="detail">
         <div className="content">
-          <img src={data.imagen} alt="" />
+          <img className='detalle-img' src={data.imagen} alt="" />
+          <div className='detalle-pos'>
+
           <h2 className='detalle-n'>{data.producto}</h2>
           <h4 className='detalle-p'>{data.precio}</h4>
           <p className='detalle-prf'>{data.descripcion}</p>
           {
             goToCart
-            ? <Link to="/cart">Terminar Compra</Link>
+            ? <Link to="/cart" className='detalle-t'>Terminar Compra</Link>
             : <ItemCount initial={1} stock={10} onAdd={onAdd}/>
           }
+          </div>
         </div>
       </div>
     </div>

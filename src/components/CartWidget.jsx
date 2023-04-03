@@ -15,7 +15,7 @@ const {totalProducts} = userCartContext();
         <span className="material-symbols-outlined">
           shopping_cart
         </span>
-        <span>{totalProducts() || ''}</span>
+        <span className='numero'>{totalProducts() || ''}</span>
         </Link>
       </div>
     </>

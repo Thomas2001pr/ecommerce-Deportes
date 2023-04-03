@@ -29,11 +29,11 @@ const orderCollection = collection(db,"orden");
     <>
     <div>
         <form onSubmit={handleSubmit} >
-            <input type="text" placeholder='Nombre y Apellido'onChange={(e)=>setName(e.target.value)} />
-            <input type="email" placeholder='Correo Electronico'onChange={(e)=>setEmail(e.target.value)} />
-            <button type="submit">Enviar</button>
+            <input className='formulario' type="text" placeholder='Nombre y Apellido'onChange={(e)=>setName(e.target.value)} />
+            <input className='formulario' type="email" placeholder='Correo Electronico'onChange={(e)=>setEmail(e.target.value)} />
+            <button className='enviar' type="submit">Enviar</button>
         </form>
-         <p>Nro. de orden{orderId}</p>
+         <p>Nro. de orden: { orderId }</p>
 
 
     </div>

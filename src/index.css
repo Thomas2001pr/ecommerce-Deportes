@@ -8,7 +8,6 @@
 
 body{
     background-color: black;
-    overflow: hidden;
 }
 
 .titulo-p{
@@ -24,7 +23,6 @@ a:-webkit-any-link{
 
 
 
-
 header{
     background-color: black;
     position: relative;
@@ -37,9 +35,17 @@ header{
 .material-symbols-outlined{
     color: white;
     text-align: right;
-    position: fixed;
+    position: relative;
     right: 80px;
     top: 25px;
+}
+
+.numero{
+    position: relative;
+    top: 20px;
+    right: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 
@@ -87,7 +93,7 @@ span{
 
 
 .ul-nav button:hover{
-    color: rgb(224, 203, 156);
+    color: rgb(218, 217, 217);
     transition: .5s;
 }
 
@@ -107,6 +113,9 @@ span{
     width: 98%;
     margin: auto;
 }
+
+
+
 
 .detail{
     margin-top: 3rem;
@@ -132,10 +141,12 @@ span{
 .contenedor-p{
     display: inline-block;
     margin-top: 50px;
+    margin-left: 40px;
     padding: 35px 35px;
     cursor: pointer;
     border: 1px solid grey;
     border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -198,11 +209,23 @@ span{
 
 .content{
     color: white;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 50px;
 }
 
+.detalle-img{
+  margin-left: 80px;
+  width: 300px;
+  height: 300px;
+}
 
 .detalle-n{
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .detalle-p{
@@ -210,19 +233,208 @@ span{
 }
 
 .detalle-prf{
-    color: white;
+    color: rgb(90, 85, 85);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-/*---------------ItemCart------------------*/
+
+.detalle-pos{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.agregar{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.agregar:hover{
+    background-color: rgb(27, 27, 27);
+    transition: .4s;
+}
+
+.restar{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px; 
+    cursor: pointer;
+}
+
+.restar:hover{
+    background-color: rgb(27, 27, 27);
+    transition: .4s; 
+}
+
+
+.vaciar{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.vaciar:hover{
+    background-color: rgb(27, 27, 27);
+    transition: .4s;
+}
+
+
+.agregar-c{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.agregar-c:hover{
+    background-color: rgb(27, 27, 27);
+    transition: .4s;
+}
+
+
+
+.detalle-num{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detalle-t{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    padding: 13px 15px;
+    position: relative;
+    top: 25px;
+}
+
+.detalle-t:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+}
+
+
+
+
+
+/*---------------CART------------------*/
 
 .itemCart{
     display: flex;
     display: inline-block;
     color: white;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    padding: 35px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
 }
 .totalPrice{
-    color: white;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+    font-family:Arial, Helvetica, sans-serif
 }
 
+
+
+
+.cart-Descripcion{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: rgb(240, 220, 107);
+}
+.cart-info{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.cart-img{
+    width: 150px;
+    height: 150px;
+}
+
+.eliminar{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.eliminar:hover{
+   background-color: rgb(167, 19, 19);
+   transition: .3s;
+   border: 1px solid black;
+}
+
+
+.formulario{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+.enviar{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: black;
+    font-weight: bold;
+}
+
+.enviar:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+
+/*-------------HACER COMPRA---------------*/
+
+
+.cont-vacio{
+text-align: center;
+margin-top: 60px;
+}
+
+
+
+.sin-elementos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.comprar{
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.comprar:hover{
+    color: black;
+    background-color: white;
+    transition: .4s;
+}

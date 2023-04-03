@@ -14,9 +14,12 @@ const {cart,totalPrice} = userCartContext();
    if(cart.length === 0){
     return(
       <>
-      <p>No hay elementos en el carrito</p>
-      <Link to="/Cart">Hacer Compra</Link>
+      <div className='cont-vacio'>
+
+      <p className='sin-elementos'>¡No hay elementos en el carrito!</p>
+      <Link to="/catalogo" className='comprar'>Hacer Compra</Link>
       
+      </div>
       </>
     );
    };
@@ -26,7 +29,7 @@ const {cart,totalPrice} = userCartContext();
       cart.map(producto => <ItemCart key={producto.id} producto={producto} />)
     }
     <p className='totalPrice'>
-       Total: {totalPrice()}
+       Total: ${totalPrice()}
        <SendOrder/>
     </p>
     </>
